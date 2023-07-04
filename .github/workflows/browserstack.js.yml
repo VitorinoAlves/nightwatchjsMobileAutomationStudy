@@ -1,0 +1,30 @@
+name: e2e-mobile-tests
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: 'Run tests - browserstack'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Browserstack env setup'
+      uses: browserstack/github-actions/setup-env@master
+      with:
+        username: ${{ secrets.BROWSERSTACK_USERNAME }}
+        access-key: ${{ secrets.BROWSERSTACK_KEY }}
+        
+    - name: 'Nightwatch tests'
+      uses: actions/checkout@v2
+      with:
+          node-version: 18
+          cache: 'npm'
+    - run: npm install
+    - name: Run tests
+      run: npm run runAndroidTestsBrowserstack
+      env:
+        USER_NAME: ${{ secrets.USER_NAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        BROWSERSTACK_USER_NAME: ${{ secrets.BROWSERSTACK_USER_NAME }}
+        BROWSERSTACK_KEY: ${{ secrets.BROWSERSTACK_KEY }}
+
