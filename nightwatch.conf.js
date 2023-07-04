@@ -156,7 +156,7 @@ module.exports = {
       },
       desiredCapabilities: {
         'bstack:options': {
-          userName: '${BROWSERSTACK_USER_NAME}',
+          userName: '${BROWSERSTACK_USERNAME}',
           accessKey: '${BROWSERSTACK_KEY}',
           appiumVersion: '2.0.0'
         }
