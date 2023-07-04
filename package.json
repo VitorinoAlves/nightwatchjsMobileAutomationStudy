@@ -1,0 +1,24 @@
+{
+  "name": "mobileautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runAndroidTestsEmulator": "npx nightwatch nightwatch/mobile-app-tests/ --env app.android.emulator",
+    "runAndroidTestsBrowserstack": "npx nightwatch nightwatch/mobile-app-tests/ --env browserstack.android"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@nightwatch/mobile-helper": "^0.1.12",
+    "appium": "^1.22.3",
+    "chromedriver": "^114.0.1",
+    "nightwatch": "^2.6.21"
+  },
+  "dependencies": {
+    "wd": "^1.14.0"
+  }
+}

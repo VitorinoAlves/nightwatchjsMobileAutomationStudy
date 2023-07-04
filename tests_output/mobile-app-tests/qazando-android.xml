@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="mobile-app-tests.qazando-android"
+    errors="1" failures="0" hostname="" id="" package="qazando-android" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new Appium Server session: [WebDriverError] An unknown server-side error occurred while processing the command. Original error: Avd &#39;nightwatch-android-9&#39; is not available. Please select your avd name from one of these: &#39;nightwatch-android-11,Pixel_2_API_28,Pixel_3a_API_33_x86_64&#39;
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new Appium Server session: [WebDriverError] An unknown server-side error occurred while processing the command. Original error: Avd &#39;nightwatch-android-9&#39; is not available. Please select your avd name from one of these: &#39;nightwatch-android-11,Pixel_2_API_28,Pixel_3a_API_33_x86_64&#39;"><![CDATA[
+      WebDriverError: An error occurred while creating a new Appium Server session: [WebDriverError] An unknown server-side error occurred while processing the command. Original error: Avd &#39;nightwatch-android-9&#39; is not available. Please select your avd name from one of these: &#39;nightwatch-android-11,Pixel_2_API_28,Pixel_3a_API_33_x86_64&#39;
+    at Object.throwDecodedError (C:\Users\vitor\Documents\projetos\mobileAutomation\node_modules\selenium-webdriver\lib\error.js:524:15)
+    at parseHttpResponse (C:\Users\vitor\Documents\projetos\mobileAutomation\node_modules\selenium-webdriver\lib\http.js:587:13)
+    at Executor.execute (C:\Users\vitor\Documents\projetos\mobileAutomation\node_modules\selenium-webdriver\lib\http.js:515:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Login with success" classname="mobile-app-tests.qazando-android">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
