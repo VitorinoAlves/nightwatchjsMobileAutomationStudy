@@ -22,7 +22,7 @@ module.exports = {
     'Login with invalid username' (){
         this.loginPage.login('teste@invalid.com', app.globals.loginPassword)
         .waitForElementVisible('@loginErrorMessage')
-        .assert.textContains('@loginErrorMessage', "Erro no login!AAA");
+        .assert.textContains('@loginErrorMessage', "Erro no login!");
 
     },
 
