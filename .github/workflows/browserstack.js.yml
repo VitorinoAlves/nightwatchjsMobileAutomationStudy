@@ -42,7 +42,5 @@ jobs:
         publish_dir: './tests_output/nightwatch-html-report'
         force_orphan: true
         keep_files: true
-        user_name: "gravityvi"
-        user_email: "ravisawlani04@gmail.com"
 
 
